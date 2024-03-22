@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fest 2024</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b206c9;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #160f0f;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        article {
+            flex-basis: 60%;
+            padding: 10px;
+        }
+        aside {
+            flex-basis: 30%;
+            padding: 10px;
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Fest 2024</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Welcome</h2>
+            <p>Digital fest is a collaborative competition conducted on a global level, where students from different schools gather together to showcase their innovative project ideas, coding & designing skills.
+
+                Technology has penetrated into our daily life to such an extent that anything and everything today is powered by technological innovations and digitization. With the growing digital advancement, the need for personalization and humanization of machines has seen keen interest and demands. This has paved the way for learning, experimenting; widened opportunities and areas of interests.</p>
+        </article>
+        <aside>
+            <h3>What are the benefits for students?</h3>
+            <p>Although we spoke about exposure and varied opportunities for students to showcase their talents in a global level platform at Digital Fest, there are multiple benefits of the same for both students and schools. Students get a chance to improve their technological skills, creativity, logical thinking, critical thinking. Cyber Square helps in developing ai projects for students including for websites, applications, games, animations, etc.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
