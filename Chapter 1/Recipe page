@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Recipe: Arabic Shawarma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Favorite Recipe: Arabic Shawarma</h1>
+    </header>
+    <main>
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>1 pack Arabic Bread</li>
+            <li>1 pc Lettuce</li>
+            <li>1 liter Garlic Sauce</li>
+            <li>1 pack French Fries</li>
+            <li>1 gram Chicken Shawarma</li>
+        </ul>
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Slice the the Shawarma chicken into a medium size diced.</li>
+            <li>Get your arabic bread and put the diced Shawarma Chicken in.</li>
+            <li>Put the Garlic Sauce, French Fries, and Lettuce in.</li>
+            <li>Wrap it and toast on a pan.</li>
+            <li>Top and bottom should be light brown after that just slice it at the middle wallah Arabic Shawarma.</li>
+        </ol>
+    </main>
+</body>
+</html>
 
