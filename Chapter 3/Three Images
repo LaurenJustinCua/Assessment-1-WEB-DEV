@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #aaaaaa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(107, 66, 255);
+        }
+        .caption {
+            margin-top: 10px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="image1.jpg" alt="Image 1">
+            <p class="caption">Nissan Skyline R34</p>
+        </div>
+        <div class="image-container">
+            <img src="image2.jpg" alt="Image 2">
+            <p class="caption">Supra MK4</p>
+        </div>
+        <div class="image-container">
+            <img src="image3.jpg" alt="Image 3">
+            <p class="caption">Ford Raptor</p>
+        </div>
+    </div>
+</body>
+</html>
