@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Peeky Blinders</h1>
+        <p>A Drama, Crime, Historical drama, Crime film, Thriller, Police procedural, Detective fiction, Crime Fiction</p>
+    </header>
+    <main>
+        <h2>About the Series</h2>
+        <p>Tommy Shelby, a dangerous man, leads the Peaky Blinders, a gang based in Birmingham. Soon, Chester Campbell, an inspector, decides to nab him and put an end to the criminal activities.</p>
+        
+        <h2>Main Characters</h2>
+        <ul>
+            <li>Tommy Shelby - Cillian Murphy</li>
+            <li>Arthur Shelby - Paul Anderson</li>
+            <li>John Shelby - Joe Cole</li>
+            <li>Alfie Solomons - Tom Hardy</li>
+            <li>Polly Gray - Helen McCrory</li>
+            <li>Grace Burgess - Annabelle Wallis</li>
+            <li>Michael Gray - Finn Cole</li>
+        </ul>
 
+        <h2>Seasons</h2>
+        <p>The series currently has six seasons, with each season continuing the story and introducing new mysteries and characters.</p>
+
+        <h2>Trivia</h2>
+        <ul>
+            <li>Michael Gray (Finn Cole) and John Shelby (Joe Cole) are brothers in real life. 
+            <li>Cillian Murphy had smoked over 3000 cigarettes over the course of filming just by the end of Series 2.</li>
+            <li>His current count would amount to around 6000 cigarettes on set.</li>
+        </ul>
+
+        <h2>Watch Now</h2>
+        <p>You can stream all seasons of "Peeky Blinders" on Netflix.</p>
+    </main>
+</body>
+</html>
