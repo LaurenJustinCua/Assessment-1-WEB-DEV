@@ -1,0 +1,159 @@
+index.html-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lauren Color Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lauren Color Guessing Game</h1>
+    <div id="color-display"></div>
+    <div id="options-container" class="options-grid"></div>
+    <div id="message"></div>
+    <button id="replay-btn" style="display: none;">Replay</button>
+    <div id="score">Score: <span id="score-value">0</span></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
+
+style.css-
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #c437c4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#color-display {
+  width: 200px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+#message {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#replay-btn {
+  padding: 10px 20px;
+  background-color: #a53ca5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#score {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+index.js-
+const colorDisplay = document.getElementById('color-display');
+const optionsContainer = document.getElementById('options-container');
+const message = document.getElementById('message');
+const scoreValue = document.getElementById('score-value');
+const replayBtn = document.getElementById('replay-btn');
+
+let score = 0;
+let lives = 3;
+
+const colors = [
+  'rgb(255, 0, 0)',
+  'rgb(0, 255, 0)',
+  'rgb(0, 0, 255)', 
+];
+
+function getRandomColor() {
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+}
+
+function createColorOptions() {
+  optionsContainer.innerHTML = '';
+  const correctColor = getRandomColor();
+  colorDisplay.style.backgroundColor = correctColor;
+
+  const shuffledColors = colors.slice().sort(() => Math.random() - 0.5);
+
+  shuffledColors.forEach(color => {
+    const option = document.createElement('div');
+    option.classList.add('option');
+    option.style.backgroundColor = color;
+    option.addEventListener('click', () => checkAnswer(color, correctColor));
+    optionsContainer.appendChild(option);
+  });
+}
+
+function checkAnswer(selectedColor, correctColor) {
+  if (selectedColor === correctColor) {
+    score++;
+    message.textContent = 'Correct!';
+  } else {
+    lives--;
+    message.textContent = 'Incorrect!';
+  }
+
+  updateScore();
+
+  if (lives === 0) {
+    endGame();
+  } else {
+    createColorOptions();
+  }
+}
+
+function updateScore() {
+  scoreValue.textContent = score;
+}
+
+function endGame() {
+  message.textContent = `Game Over! Your score: ${score}`;
+  replayBtn.style.display = 'block';
+}
+
+replayBtn.addEventListener('click', () => {
+  score = 0;
+  lives = 3;
+  message.textContent = '';
+  updateScore();
+  createColorOptions();
+  replayBtn.style.display = 'none';
+});
+
+updateScore();
+createColorOptions();
