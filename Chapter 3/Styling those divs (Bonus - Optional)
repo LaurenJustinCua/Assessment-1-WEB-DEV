@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .hero-section {
+      background-color: #fdfdfd;
+      padding: 50px;
+      margin-bottom: 20px;
+    }
+    .feature-box {
+      background-color: #5599ff;
+      border: 1px solid #9949da;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-section">
+      <h1>Welcome to Our Website</h1>
+      <p>Discover amazing things with us!</p>
+    </div>
+    <div class="feature-box">
+      <h2>Feature 1</h2>
+      <p>Description of feature 1.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Feature 2</h2>
+      <p>Description of feature 2.</p>
+    </div>
+  </div>
+</body>
+</html>
