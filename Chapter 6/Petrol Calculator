@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Petrol Calculator</title>
     <style>
-        /* Basic styling for the calculator */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -26,7 +25,7 @@
             border: none;
             cursor: pointer;
         }
-        #result {
+            {
             margin-top: 20px;
         }
     </style>
