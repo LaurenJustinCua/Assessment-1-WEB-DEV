@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Comedy Radio Soundboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Alan Comedy Radio Soundboard</h1>
+
+    <div id="audio-samples" class="audio-grid">
+    </div>
+
+    <div class="text-to-speech">
+      <textarea id="textInput" placeholder="Type your text here"></textarea>
+      <button id="playTextBtn">Play Text</button>
+    </div>
+
+    <div class="pagination">
+      <img src="assets/images/left-arrow.png" alt="Previous Page" id="prevPage">
+      <span id="pageNum">Page 1</span>
+      <img src="assets/images/right-arrow.png" alt="Next Page" id="nextPage">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .audio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust as needed */
+    gap: 20px;
+  }
+  
+  .audio-sample {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .audio-sample:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .text-to-speech {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button#playTextBtn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button#playTextBtn:hover {
+    background-color: #444;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #pageNum {
+    margin: 0 10px;
+  }
+  
+  img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
