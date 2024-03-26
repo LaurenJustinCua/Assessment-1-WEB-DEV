@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lauren's Study Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Lauren's Study Plan</h1>
+      <nav>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Welcome to the Study Plan Manager for Web Development.</p>
+      </section>
+
+      <section id="modules">
+        <h2>Modules</h2>
+        <div class="module">
+          <h3>Module 1: HTML & CSS</h3>
+          <p>Learn the basics of HTML and CSS.</p>
+          <button>View Details</button>
+        </div>
+      </section>
+
+      <section id="schedule">
+        <h2>Schedule</h2>
+        <div class="schedule-item">
+          <h3>Week 1</h3>
+          <p>Introduction to HTML</p>
+        </div>
+          </section>
+
+      <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+          <li>Online tutorials</li>
+          <li>Textbooks</li>
+          <li>Code editors</li>
+          <li>Development environments</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lauren's Study Plan</p>
+  </footer>
+</body>
+</html>
+
